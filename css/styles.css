@@ -34,6 +34,7 @@ img {
 
 /* Variables */
 :root {
+  --grey-color:#8E8F99;
   --primary-text-color: #2e2f42;
   --accent-color: #404bbf;
   --text-color: #434455;
@@ -216,13 +217,27 @@ img {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--text-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
+.box-shadow-portfolio{
+  box-shadow:none;
+}
+.box-shadow-portfolio:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-ul-img-list {
   display: flex;
   flex-wrap: wrap;
 }
-
+.link{
+  display: block;
+  text-decoration:none;
+  
+  color: var(--text-h-color)
+}
+.link:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-img {
   margin-right: 24px;
   margin-bottom: 48px;
@@ -244,9 +259,7 @@ img {
   padding-bottom: 32px;
 
 }
-.portfolio-card:hover{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 .list-h-portfolio {
   font-weight: 500;
@@ -264,6 +277,10 @@ img {
 }
 
 /* Footer */
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
 .footer-portfolio {
   background-color: var(--text-h-color);
   color: var(--text-white-color);
@@ -306,6 +323,8 @@ img {
 /* Effective Solutions*/
 
 .effective-solutions {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--text-h-color);
   padding: 188px 0;
   text-align: center;
@@ -458,7 +477,7 @@ font-family: "Roboto";
 .customers-section{
     padding-top: 120px;
   padding-bottom: 120px;
-  
+  color: blue;
 }
 .customers-logo{
 display: flex;
@@ -471,22 +490,32 @@ margin-top: 8px;
 .customers-item{
  width: 168px;
  height: 88px;
- border: 1px solid #8E8F99;
-border-radius: 4px;
+
 }
+
 .customers-link{
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+fill: var(--grey-color);
   width: 100%;
   height: 100%;
+   color: blue;
 }
+.customers-link:hover{
+  border: 1px solid var(--accent-color);
+border-radius: 4px;
+ fill: var(--accent-color);
+}
+
 .customers-icon{
   width: 104px;
   height: 56px;
-  fill: var(--text-white-color)
+ 
 }
+
 /* Socials */
 .socials-list{
 display: flex;
@@ -569,46 +598,50 @@ display: flex;
 justify-content: center;
 gap: 40px;
 margin-bottom: 8px;
-margin-right: 140px;
 }
 
 .antenna-icon{
- width: 240px;
- height: 116px;
- margin-left: 90px;
- 
+ width: 264px;
+ height: 112px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--our-team-background-color);
+
  
 }
 .clock-icon{
- width: 240px;
- height: 116px;
+width: 264px;
+ height: 112px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+background-color: var(--our-team-background-color);
 
  
 }
 .diagram-icon{
- width: 240px;
- height: 116px;
- 
+ width: 264px;
+ height: 112px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--our-team-background-color);
+
  
 }
 .astronaut-icon{
- width: 240px;
- height: 116px;
- 
- 
-}
-.feautures-icons-link{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1000px;
+width: 264px;
+ height: 112px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--our-team-background-color);
   
-  background-color: var(--our-team-background-color);
-  width: 100%;
-  height: 100%;
 }
+
 .feautures-icon{
-  width: 61px;
+  width: 64px;
   height: 64px;
   fill: black;
 }
